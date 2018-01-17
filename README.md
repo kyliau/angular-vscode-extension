@@ -11,3 +11,11 @@ This extension is meant to be used in conjunction with the Angular Typescript pl
 It tells VS Code to associate `.ng.html` files with the Angular plugin.
 When external Angular templates are opened, VS Code would invoke the plugin to enable language service features.
 Inline templates in Typescript files will continue to work as before.
+
+## Location of `@angular/language-service`
+Enabling plugin @angular/language-service from candidate paths:
+* `/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/node_modules`
+* `/Users/kyliau/.vscode/extensions/Angular.angular-language-service-0.0.1`
+
+## Known Issues
+1. Does not work with Typescript 2.6 (https://github.com/Microsoft/TypeScript/issues/20321) 
