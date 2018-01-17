@@ -18,4 +18,20 @@ Enabling plugin @angular/language-service from candidate paths:
 * `/Users/kyliau/.vscode/extensions/Angular.angular-language-service-0.0.1`
 
 ## Known Issues
-1. Does not work with Typescript 2.6 (https://github.com/Microsoft/TypeScript/issues/20321) 
+1. Crash on startup with Typescript 2.6 (https://github.com/Microsoft/TypeScript/issues/20321)
+
+## Questions
+
+1. What if user specify the plugin in `tsconfig.json` via
+
+```
+{
+  "compilerOptions" : {
+    "plugins": [
+      { "name" : "@angular/language-service" }
+    ]
+  }
+}
+```
+
+Will this load the version of `@angular/language-service` installed by the user?
