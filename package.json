@@ -33,7 +33,7 @@
     ],
     "typescriptServerPlugins": [
       {
-        "name": "angular_language_service",
+        "name": "@angular/language-service",
         "languages": [
           "ng-template"
         ]
