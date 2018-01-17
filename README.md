@@ -9,4 +9,4 @@ plugin [architecture](https://github.com/Microsoft/TypeScript/wiki/Writing-a-Lan
 ## Introduction
 This extension is meant to be used in conjunction with the Angular Typescript plugin.
 It tells VS Code to associate `.ng.html` files with the Angular plugin.
-When external Angular templates are opened, VS Code would invoke the plugin to enable language service features .
+When external Angular templates are opened, VS Code would invoke the plugin to enable language service features.
