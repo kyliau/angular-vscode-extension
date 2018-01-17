@@ -1,0 +1,30 @@
+{
+  "name": "angular-language-service",
+  "displayName": "Angular Language Service",
+  "description": "Language service for Angular templates",
+  "version": "0.0.1",
+  "publisher": "Angular",
+  "engines": {
+    "vscode": "^1.16.0"
+  },
+  "categories": [
+    "Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "ng-template",
+      "aliases": ["Angular Template", "ng-template"],
+      "extensions": [".ng.html"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "ng-template",
+      "scopeName": "text.html.basic",
+      "path": "./syntaxes/angular.tmLanguage"
+    }],
+    "typescriptServerPlugins": [{
+      "name": "angular_language_service",
+      "languages": ["ng-template"]
+    }]
+  }
+}
