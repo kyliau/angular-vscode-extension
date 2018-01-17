@@ -11,20 +11,36 @@
     "Languages"
   ],
   "contributes": {
-    "languages": [{
-      "id": "ng-template",
-      "aliases": ["Angular Template", "ng-template"],
-      "extensions": [".ng.html"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "ng-template",
-      "scopeName": "text.html.basic",
-      "path": "./syntaxes/angular.tmLanguage"
-    }],
-    "typescriptServerPlugins": [{
-      "name": "angular_language_service",
-      "languages": ["ng-template"]
-    }]
+    "languages": [
+      {
+        "id": "ng-template",
+        "aliases": [
+          "Angular Template",
+          "ng-template"
+        ],
+        "extensions": [
+          ".ng.html"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "ng-template",
+        "scopeName": "text.html.basic",
+        "path": "./syntaxes/angular.tmLanguage"
+      }
+    ],
+    "typescriptServerPlugins": [
+      {
+        "name": "angular_language_service",
+        "languages": [
+          "ng-template"
+        ]
+      }
+    ]
+  },
+  "dependencies": {
+    "@angular/language-service": "^5.2.1"
   }
 }
