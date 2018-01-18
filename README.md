@@ -18,8 +18,12 @@ Enabling plugin @angular/language-service from candidate paths:
 * `/Users/kyliau/.vscode/extensions/Angular.angular-language-service-0.0.1`
 
 ## Known Issues
-1. Crash on startup with Typescript 2.6 (https://github.com/Microsoft/TypeScript/issues/20321)
-2. Semantic errors (e.g. non-existent property) not shown on external template.
+1. Crash on startup with Typescript 2.6  
+   Issue: https://github.com/Microsoft/TypeScript/issues/20321  
+   Fix: https://github.com/kyliau/TypeScript/pull/1
+2. Semantic errors (e.g. non-existent property) not shown on external template  
+   Issue: https://github.com/Microsoft/TypeScript/issues/21280  
+   Fix: https://github.com/kyliau/TypeScript/pull/2
 
 ## Questions
 
