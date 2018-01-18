@@ -19,6 +19,7 @@ Enabling plugin @angular/language-service from candidate paths:
 
 ## Known Issues
 1. Crash on startup with Typescript 2.6 (https://github.com/Microsoft/TypeScript/issues/20321)
+2. Semantic errors (e.g. non-existent property) not shown on external template.
 
 ## Questions
 
