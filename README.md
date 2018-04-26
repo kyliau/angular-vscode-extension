@@ -15,6 +15,10 @@ Inline templates in Typescript files will continue to work as before.
 ## Installation
 `code --install-extension <extension-vsix-path>`
 
+## Packaging vsix
+`yarn add vsce --dev`
+`$(yarn bin)/vsce package`
+
 ## Location of `@angular/language-service`
 Enabling plugin @angular/language-service from candidate paths:
 * `/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/node_modules`
