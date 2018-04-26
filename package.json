@@ -2,6 +2,7 @@
   "name": "angular-language-service",
   "displayName": "Angular Language Service",
   "description": "Language service for Angular templates",
+  "repository": "https://github.com/kyliau/angular-vscode-extension",
   "version": "0.0.1",
   "publisher": "Angular",
   "engines": {
