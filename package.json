@@ -1,5 +1,5 @@
 {
-  "name": "angular-language-service",
+  "name": "angular-tsserver-plugin",
   "displayName": "Angular Language Service",
   "description": "Language service for Angular templates",
   "license": "MIT",
@@ -13,40 +13,17 @@
     "Programming Languages"
   ],
   "contributes": {
-    "languages": [
-      {
-        "id": "ng-template",
-        "aliases": [
-          "Angular Template"
-        ],
-        "extensions": [
-          ".html",
-          ".ng.html"
-        ],
-        "configuration": "./language-configuration.json"
-      }
-    ],
-    "grammars": [
-      {
-        "language": "ng-template",
-        "scopeName": "text.html.basic",
-        "path": "./angular.tmLanguage"
-      }
-    ],
     "typescriptServerPlugins": [
       {
         "name": "@angular/language-service",
         "enableForWorkspaceTypeScriptVersions": true,
         "languages": [
-          "ng-template"
+          "html"
         ]
       }
     ]
   },
-  "dependencies": {
-    "@angular/language-service": "^8.0.0-rc.4"
-  },
   "devDependencies": {
-    "vsce": "^1.61.0"
+    "vsce": "^1.62.0"
   }
 }
